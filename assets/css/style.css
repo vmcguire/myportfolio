@@ -42,3 +42,10 @@ header nav {
     padding: 0px 8px;
 
 }
+main{
+    border: 1px solid var(--tertiary-color);
+    display:flex;
+    min-height: 300px;
+    width: 100%;
+    padding: 25px 35px;
+}
