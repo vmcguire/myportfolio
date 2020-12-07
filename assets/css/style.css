@@ -49,3 +49,20 @@ main{
     width: 100%;
     padding: 25px 35px;
 }
+@media screen and (max-width: 980px) {
+    header {
+      
+    }
+  }
+
+@media screen and (max-width: 768px) {
+    header {
+      
+    }
+  }  
+  /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+  @media screen and (max-width: 575px) {
+    header {
+      
+    }
+  }
