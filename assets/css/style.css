@@ -45,24 +45,353 @@ header nav {
 main{
     border: 1px solid var(--tertiary-color);
     display:flex;
+    height: 50vh;
     min-height: 300px;
     width: 100%;
     padding: 25px 35px;
+    position: relative;
 }
+img{
+    height: 300px;
+    width: 300px;
+}
+main h2 {
+    border: 1px solid var(--tertiary-color);
+    height: 3vh;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 0 8px;
+    margin: 25px 35px;
+    /* margin-right: .8px; */
+}
+.grid-container{
+    padding: 40px;
+    border: 1px solid var(--tertiary-color);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5,1fr);
+    grid-gap: 20px;
+}
+.grid-item {
+    border: 1px solid var(--tertiary-color);
+    min-height: 10vh;
+}
+.about-me{
+    grid-column: 1 / 2;
+    text-align: right;
+    font-size: 2.5vw;
+    font-size: max(30px);
+}
+.about-me-text{
+    grid-column: 2 / -1;
+}
+.work{
+    grid-column: 1 / 2;
+    grid-row: 2 / 5;
+    text-align: right;
+    font-size: 2.5vw;
+    font-size: max(30px);
+}
+.run-buddy{
+    grid-column: 2 / -2;
+    grid-row: 2 / 4;
+}
+.sharp-creativity{
+
+}
+.urban-octo{
+
+}
+.evamore{
+
+}
+.shop-your-fit{
+
+}
+.contact-me{
+    grid-column: 1 / 2;
+    grid-row: 5 / 6;
+    text-align: right;
+    font-size: 2.5vw;
+    font-size: max(30px);
+}
+.contact-me-links{
+    grid-column: 2 / -1;
+    grid-row: 5 / 6;
+    display: flex;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+.contact-me-links ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    vertical-align: center;
+}
+.contact-me-links ul li {
+    vertical-align: middle;
+    display:inline;
+    padding: 0px 8px;
+}
+.contact-me-links ul li a {
+    text-decoration: none;
+    font-weight: lighter;
+    font-size: 1.1vw;
+}
+.projectname{
+    border: 1px solid var(--tertiary-color);
+    border-color: red;
+}
+
+/*Media Styles*/
+
 @media screen and (max-width: 980px) {
-    header {
-      
+    header nav{
+      display: block;
     }
-  }
+    main h2 {
+        border: 1px solid var(--tertiary-color);
+        height: 3vh;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        padding: 0 8px;
+        margin: 25px 35px;
+        /* margin-right: .8px; */
+    }
+}
 
 @media screen and (max-width: 768px) {
     header {
-      
+        border: 1px solid var(--tertiary-color);
+        padding: 25px 35px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
     }
-  }  
-  /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
-  @media screen and (max-width: 575px) {
+    header h1{
+    
+    }
+    .header-title{
+        border: 1px solid var(--tertiary-color);
+    }
+    .header-links{
+        border: 1px solid var(--tertiary-color);
+    }
+    header nav {
+        margin: 8px 0;
+    }
+    .header-links ul{
+        border: 1px solid var(--tertiary-color);
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: center;
+        list-style: none;
+    }
+    .header-links ul li{
+        border: 1px solid var(--tertiary-color);
+        /* display:inline; */
+        padding: 0px 8px;
+    }
+    main{
+        border: 1px solid var(--tertiary-color);
+        display:flex;
+        min-height: 300px;
+        width: 100%;
+        padding: 25px 35px;
+        position: relative;
+    }
+    img{
+        height: 300px;
+        width: 300px;
+    }
+    main h2 {
+        border: 1px solid var(--tertiary-color);
+        position: absolute;
+        padding: 0 8px;
+        margin: 25px 35px;
+        }
+    .grid-container{
+        padding:20px;
+        border: 1px solid var(--tertiary-color);
+        display:grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(5,1fr);
+        grid-gap: 20px;
+        justify-content: start;
+        /* margin: 25px 35px; */
+    }
+    .grid-item {
+        border: 1px solid var(--tertiary-color);
+        width:100%
+    }
+    .about-me{
+        text-align: right;
+        font-size: 3vw;
+    }
+    .about-me-text{
+    
+    }
+    .work{
+        text-align: right;
+        font-size: 3vw;
+    }
+    .run-buddy{
+    
+    }
+    .sharp-creativity{
+    
+    }
+    .urban-octo{
+    
+    }
+    .evamore{
+    
+    }
+    .shop-your-fit{
+    
+    }
+    .contact-me{
+        text-align: right;
+        font-size: 2.5vw;
+    }
+    .contact-me-links{
+        
+    }
+    .contact-me-links ul {
+        /* display: flex; */
+    }
+    .contact-me-links ul {
+        padding: 0px 4px;
+    }
+    .contact-me-links ul li a{
+        font-size: 2vw;
+    }
+    .projectname{
+        border: 1px solid var(--tertiary-color);
+        border-color: red;
+    }
+}
+
+@media screen and (max-width: 575px) {
     header {
-      
+        border: 1px solid var(--tertiary-color);
+        padding: 15px 20px;
+        display: flex;
+        flex-direction:column;
+        justify-content: center;
     }
-  }
+    header h1{
+        text-align: center;
+    }
+    .header-title{
+        border: 1px solid var(--tertiary-color);
+    }
+    .header-links{
+        border: 1px solid var(--tertiary-color);
+    }
+    header nav {
+        margin: 8px 0;
+    }
+    .header-links ul{
+        border: 1px solid var(--tertiary-color);
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        list-style: none;
+        flex-direction:column;
+        justify-content: center;
+        font-size:1.5vh;
+    }
+    .header-links ul li{
+        border: 1px solid var(--tertiary-color);
+        /* display:inline; */
+        padding: 0px 8px;
+    }
+    main{
+        border: 1px solid var(--tertiary-color);
+        display:flex;
+        min-height: 300px;
+        width: 100%;
+        padding: 15px 20px;
+        position: relative;
+    }
+    img{
+        height: 300px;
+        width: 300px;
+    }
+    main h2 {
+        border: 1px solid var(--tertiary-color);
+        width:100%;
+        text-align: center;
+        margin: 0 auto;
+    }
+    .grid-container{
+        padding:20px;
+        border: 1px solid var(--tertiary-color);
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        list-style: none;
+        flex-direction:column;
+        justify-content: center;
+    }
+    .grid-item {
+        border: 1px solid var(--tertiary-color);
+        min-height: 5vh;
+    }
+    .about-me{
+        text-align: center;
+        font-size:5vw;
+        height: 5vh;
+    }
+    .about-me-text{
+    
+    }
+    .work{
+        text-align: center;
+        font-size:5vw;
+        height: 5vh;
+    }
+    .run-buddy{
+    
+    }
+    .sharp-creativity{
+    
+    }
+    .urban-octo{
+    
+    }
+    .evamore{
+    
+    }
+    .shop-your-fit{
+    
+    }
+    .contact-me{
+        text-align: center;
+        font-size:5vw;
+        height: 5vh;
+    }
+    .contact-me-links{
+    }
+    
+    .contact-me-links ul {
+        display: flex;
+        flex-direction: column;
+    }
+    .contact-me-links ul li a{
+        font-size: 3vw;
+    }
+    .projectname{
+        border: 1px solid var(--tertiary-color);
+        border-color: red;
+    }
+}
