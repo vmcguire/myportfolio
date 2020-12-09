@@ -40,7 +40,7 @@ https://ucb.bootcampcontent.com/UCB-Coding-Bootcamp/ucb-virt-bo-fsf-pt-11-2020-u
 
 ## License
 
-*** Copyright (c) [2020] [Victor McGuire] ***
+*** Copyright (c) 2020 Victor McGuire ***
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -62,4 +62,4 @@ SOFTWARE.
 
 ---
 
-© 2020 Sharp Creativity LLC, Confidential and Proprietary. All Rights Reserved.
+© 2020 Victor McGuire, Confidential and Proprietary. All Rights Reserved.
